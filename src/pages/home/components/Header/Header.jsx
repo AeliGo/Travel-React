@@ -1,5 +1,5 @@
 import React from 'C:/Users/kun12/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react'
-import sheader from './style-header.styl'
+import './style-header.styl'
 
 export default class Header extends React.Component{
   constructor(){
@@ -9,9 +9,8 @@ export default class Header extends React.Component{
     }
   }
   render(){
-    // console.log(headerStyl)
     return (
-      <div className={sheader.header}>
+      <div className="Home-header">
         <div className="header-left">
           <span className="iconfont backward-arrow">&#xe607;</span>
         </div>
