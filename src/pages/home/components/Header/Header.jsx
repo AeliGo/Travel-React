@@ -1,4 +1,4 @@
-import React from 'C:/Users/kun12/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react'
+import React from 'react'
 import './style-header.styl'
 
 export default class Header extends React.Component{
