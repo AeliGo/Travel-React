@@ -230,7 +230,7 @@ module.exports = {
                     {
                       loader: require.resolve('css-loader'),
                       options: {
-                        modules:true,
+                        // modules:true,
                         // localIdentName:'[path][name]-[local]-[hash:5]',
                         importLoaders: 2,
                         minimize: true,
