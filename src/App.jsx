@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'C:/Users/kun12/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react'
 import {
   BrowserRouter as Router,
   Route
-} from 'react-router-dom'
+} from 'C:/Users/kun12/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react-router-dom'
 
 import Home from '@/pages/home/Home'
 import Detail from '@/pages/detail/Detail'
