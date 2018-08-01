@@ -1,0 +1,34 @@
+@import '~styles/varibles.styl'
+@import '~styles/mixins.styl'
+
+.Home-icons-wrapper
+  margin-top :.1rem
+  .page-icon
+    height :0
+    position :relative
+    overflow :hidden
+    width: 25%
+    padding-bottom: 25%
+    float :left
+    .icon-img-wrap
+      position :absolute
+      left : 0
+      right :0
+      top :0
+      bottom: .44rem
+      box-sizing:border-box
+      padding :.1rem
+      .icon-img-content
+        display :block
+        margin : 0 auto
+        height :100%
+    .icon-desc
+      position : absolute
+      bottom: 0
+      left :0
+      right:0
+      height :.44rem
+      line-height: .44rem
+      text-align: center
+      color :$darkTextColor
+      ellipsis()
