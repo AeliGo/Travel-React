@@ -22,16 +22,11 @@ export default class Home extends React.Component{
   render(){
     const {swiperData}=this.state
     return (
-<<<<<<< HEAD
-      <HomeHeader/>
-      
-=======
       <div>
         <HomeHeader/>
         <HomeSwiper swiperData={swiperData}/>
         <h1>1111111</h1>
       </div>
->>>>>>> origin/Home-Swiper
     )
   }
 }
