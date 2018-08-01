@@ -31,7 +31,7 @@ export default class Icons extends React.Component{
     return (
       <div className="Home-icons-wrapper">
         <ReactSwipe swipeOptions={{continuous: false,startSlide: 0}}>
-          {pages.map((icons,index)=>{return <div key={index.toString()}><IconsPage icons={icons}/></div>})}        
+          {pages&&pages.map((icons,index)=>{return <div key={index.toString()}><IconsPage icons={icons}/></div>})}        
         </ReactSwipe>
       </div>
     )

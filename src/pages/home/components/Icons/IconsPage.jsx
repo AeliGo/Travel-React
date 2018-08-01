@@ -9,7 +9,7 @@ export default class IconsPage extends React.Component{
   render(){
     const icons=this.props.icons
     return <div>
-      {icons.map(item=>(
+      {icons&&icons.map(item=>(
         <div className="page-icon" key={item.id}>
           <div className="icon-img-wrap">
             <img className="icon-img-content" src={item.imgUrl} alt=""/>

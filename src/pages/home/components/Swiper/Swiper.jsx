@@ -4,17 +4,17 @@ import ReactSwipe from 'react-swipe'
 import PropTypes from 'prop-types'
 
 export default class Swiper extends React.Component{
-  constructor(props){
-    super(props)
+  constructor(){
+    super()
     this.state={
       currentIndex:0
     }
   }
   static propTypes={
-    swiperData : PropTypes.array.isRequired
+    swiperList : PropTypes.array.isRequired
   }
   render(){
-    const swiperData=this.props.swiperData
+    const swiperList=this.props.swiperList
     const _self=this
     return (
       <div className="Home-swiper_wrapper">
@@ -24,14 +24,14 @@ export default class Swiper extends React.Component{
                       speed: 400,
                       callback: function(currentIndex) {_self.setState({currentIndex})},
                       auto: 3000,}}>
-          {swiperData.map(item=>(
+          {swiperList.length && swiperList.map(item=>(
             <img key={item.id} src={item.imgUrl} style={{width:'100%'}} alt="图片" />
           ))}
         </ReactSwipe>
         <div className="pagenation">
-            {swiperData.map((item,index)=>{ return <span key={index.toString()} className={index===this.state.currentIndex?'dot dot-active':'dot'}></span>})}
+            {swiperList.length && swiperList.map((item,index)=>{ return <span key={index.toString()} className={index===this.state.currentIndex?'dot dot-active':'dot'}></span>})}
         </div>
       </div>
-    )
+    )  
   }
 }

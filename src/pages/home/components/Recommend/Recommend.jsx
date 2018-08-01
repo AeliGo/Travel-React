@@ -21,7 +21,6 @@ export default class Recommend extends React.Component{
     let listHide=recommendList.filter((item,index)=>{return index >= 3})
     this.setState({listShow,listHide})
   }
-
   handleClick=()=>{
     let loadmore=this.state.loadmore
     loadmore=!loadmore
@@ -33,7 +32,7 @@ export default class Recommend extends React.Component{
       <div className="title">热销推荐</div>
       <ul>
         <div> 
-          {listShow.map(item=>
+          {listShow && listShow.map(item=>
             <Link to={"/detail/"+item.id} key={item.id} className="item border-bottom">
               <img className="item-img" src={item.imgUrl} alt=""/>
               <div className="item-info">
@@ -45,7 +44,7 @@ export default class Recommend extends React.Component{
           )}
         </div>
         <div className={loadmore?'show':'hide'}> 
-          {listHide.map(item=>(
+          {listShow && listHide.map(item=>(
             <Link to={"/detail/"+item.id} key={item.id} className="item border-bottom">
               <img className="item-img" src={item.imgUrl} alt=""/>
               <div className="item-info">
